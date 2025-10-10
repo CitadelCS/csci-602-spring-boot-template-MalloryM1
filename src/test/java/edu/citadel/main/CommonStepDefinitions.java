@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CommonStepDefinitions extends SpringIntegrationTest {
 
-    @When("the client calls /version")
+    @When("the client calls \\/version")
     public void theClientCallsVersion() {
         String url = createURLWithPort("/version");
         execute(url);
