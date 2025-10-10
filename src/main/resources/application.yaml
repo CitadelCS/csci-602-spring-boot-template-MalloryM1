@@ -16,8 +16,6 @@ management:
         include: openapi, swagger-ui
 server:
   port: 25060
-  servlet:
-    contextPath: /springbootapp
 spring:
   application:
     name: csci-602

@@ -23,6 +23,11 @@ spring:
     password: admin
     url: jdbc:postgresql://localhost:5433/testdb
     username: admin
+  flyway:
+    enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: update
   mvc:
     servlet:
       load-on-startup: 1
