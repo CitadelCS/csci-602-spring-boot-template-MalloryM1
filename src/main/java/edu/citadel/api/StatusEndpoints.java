@@ -45,6 +45,11 @@ public class StatusEndpoints {
         info.put("description", applicationDescription);
         return objectWriter.writeValueAsString(info);
     }
+
+    @GetMapping(value = "version", produces = MediaType.TEXT_PLAIN_VALUE)
+    public String version() {
+        return applicationVersion;
+    }
 }
 
 

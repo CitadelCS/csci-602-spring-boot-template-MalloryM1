@@ -2,7 +2,7 @@ info:
   app:
     description: Template Spring Boot API for use of CSCI 602
     name: csci-602
-    version: 1.0.0
+    version: 1.0
 management:
   endpoint:
     health:
@@ -15,7 +15,7 @@ management:
       exposure:
         include: openapi, swagger-ui
 server:
-  port: 5001
+  port: 25060
 spring:
   application:
     name: csci-602
@@ -32,3 +32,8 @@ springdoc:
   packagesToScan: edu.citadel.api
   pathsToMatch: /v1, /**
   show-actuator: true
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+    edu.citadel: TRACE
